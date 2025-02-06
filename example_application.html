@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Rohitkumar Asare | Salesforce Developer ~ Automation Enthusiast</title>
+    <meta name="title" content="Rohitkumar Asare | Salesforce Developer ~ Automation Enthusiast" />
+    <meta name="description"
+        content="Salesforce Developer Automating Processes, Implementing AI, and Enhancing Productivity" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rohitasare7.github.io/" />
+    <meta property="og:title" content="Rohitkumar Asare | Salesforce Developer ~ Automation Enthusiast" />
+    <meta property="og:description"
+        content="Salesforce Developer Automating Processes, Implementing AI, and Enhancing Productivity" />
+    <meta property="og:image" content="https://rohitasare7.github.io/Assets/images/me.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rohitasare7.github.io/" />
+    <meta property="twitter:title" content="Rohitkumar Asare | Salesforce Developer ~ Automation Enthusiast" />
+    <meta property="twitter:description"
+        content="Salesforce Developer Automating Processes, Implementing AI, and Enhancing Productivity" />
+    <meta property="twitter:image" content="https://rohitasare7.github.io/Assets/images/me.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="9XWLht9RV-TDb45WpLWkFmz7TTPg6AfaOdOXWqofwAo" />
+    <!-- <link rel="stylesheet" href=""> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
+        body {
+            font-family: "Figtree", sans-serif;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X6GS9623F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-6X6GS9623F");
+        //Years of Exp Dynamic
+        document.addEventListener("DOMContentLoaded", () => {
+            // Work experience periods
+            const workPeriods = [
+                { start: new Date("2018-07-01"), end: new Date("2019-07-01") }, // Emerson
+                { start: new Date("2021-04-01"), end: new Date("2022-08-01") }, // Persistent Systems
+                { start: new Date("2022-08-01"), end: new Date() }, // Infosys Limited (current job)
+            ];
+
+            // Function to calculate total work experience
+            const calculateTotalExperience = (periods) => {
+                let totalMonths = 0;
+
+                periods.forEach(period => {
+                    const start = period.start;
+                    const end = period.end;
+                    const months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+                    totalMonths += months;
+                });
+
+                // Convert months to years (rounded up)
+                return Math.round(totalMonths / 12);
+            };
+
+            // Calculate the total experience
+            const totalExperience = calculateTotalExperience(workPeriods);
+
+            // Dynamically update all elements with the class 'experience-years'
+            const experienceElements = document.querySelectorAll(".experience-years");
+            experienceElements.forEach(element => {
+                element.textContent = totalExperience;
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-night-900">
+    <main class="container mx-auto max-w-6xl px-4 py-6">
+        <div class="gap-5 sm:grid lg:grid-cols-3">
+            <div class="space-y-5">
+                <!-- Profile Block Starts -->
+                <div class="card bg-white relative mx-auto rounded-lg overflow-hidden">
+                    <div class="overflow-hidden relative">
+                        <img src="Assets/images/cover_pic.jpg" alt="" class="mb-0 object-cover object-center" />
+
+                        <div class="flex absolute inset-0 py-2 px-4 flex items-end bg-gradient-to-t from-white">
+                            <img src="Assets/images/me.png" alt="Rohitkumar Asare"
+                                class="w-20 h-20 border-2 border-white rounded-full object-cover object-center shadow-md" />
+                        </div>
+                    </div>
+                    <div class="px-6 mb-3">
+                        <div class="text-lg font-semibold text-gray-800 dark:text-night-50 mt-1">
+                            Rohitkumar Asare
+                        </div>
+                        <div class="text-sm text-gray-700 dark:text-night-200">
+                            Salesforce Developer | YouTuber | Blogger
+                        </div>
+                    </div>
+                    <div class="m-2 p-4 rounded-md bg-gray-50 text-sm text-gray-600 dark:text-night-200 mt-2">
+                        <p>
+                            Salesforce Developer with <span class="experience-years"></span> years of experience in
+                            APEX,
+                            LWC/AURA, and REST APIs.
+                        </p>
+                        <p class="my-2">Passionate about AI, Process Improvement.</p>
+                        <p>
+                            A YouTube content creator, sharing valuable insights on
+                            <a href="https://www.youtube.com/@ThatSalesforceGuy" target="_blank"
+                                class="text-blue-800 hover:text-blue-900 font-semibold">That Salesforce Guy</a>.
+                        </p>
+
+                        <div class="flex justify-center mt-4">
+                            <!-- CV / Resume Download Button -->
+                            <a href="https://www.linkedin.com/in/rohit-asare/" target="_blank"
+                                class="bg-blue-600 font-semibold text-white flex items-center justify-center gap-2 px-4 py-2 rounded-md w-full hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                                Connect on
+                                <img src="Assets/icons/linkedein.svg" />
+                            </a>
+                            <a href="/Assets/doc/resume.pdf" target="_blank"
+                                class="ml-2 bg-blue-600 font-semibold text-white flex items-center justify-center gap-2 px-4 py-2 rounded-md w-full hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                                Resume
+                                <img src="Assets/icons/download.svg" class="text-white fill-white stroke-white" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile Block Ends -->
+
+                <!-- Information Block Starts -->
+                <!-- <div class="card bg-white p-2 rounded-lg">
+                    <h2
+                        class="ml-2 my-1 flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-4">
+                        Information
+                    </h2>
+                    <div class="px-2 py-2.5 rounded-md bg-gray-50 text-sm text-gray-600 dark:text-night-200">
+                        <ul class="list-none">
+                            <li class="flex justify-between border-b pb-2.5">
+                                <span>Location</span>
+                                <span>Pune, India</span>
+                            </li>
+                            <li class="flex justify-between pt-2.5">
+                                <span>Experience</span>
+                                <span> <span class="experience-years"></span> Years</span>
+                            </li>
+                            <li class="flex justify-between pt-2.5">
+                                <span>Availability</span>
+                                <span>In 3 Months</span>
+                            </li>
+                            <li class="flex justify-between pt-2.5">
+                                <span>Relocation</span>
+                                <span>No</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- Information Block Ends -->
+
+                <!-- Skill Block Starts -->
+                <div class="card bg-white p-4 pt-2 rounded-lg">
+                    <h2
+                        class="my-1 flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-4">
+                        Skills &amp; Expertise
+                    </h2>
+                    <div class="-m-2 flex flex-wrap gap-2">
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Salesforce
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Digital Experience Sites
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            APEX
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            LWC
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            AURA
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            REST API
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            SOAP API
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            HTML
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            CSS
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            JavaScript
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Postman
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Workbench
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Data Loader
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            SFDX CLI
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Git
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Bitbucket
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Gitlab
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Jenkins
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Azure DevOps
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            IDX Workbench
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            JIRA
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Confluence
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Laravel
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            VueJS
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            NuxtJS
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Tailwind CSS
+                        </span>
+                        <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            WordPress
+                        </span>
+                        <!-- <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Blogger
+                        </span> -->
+                        <!-- <span
+                            class="cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs px-2 py-1 rounded-md">
+                            Adobe Creative Suite
+                        </span> -->
+                    </div>
+                </div>
+                <!-- Skill Block Ends -->
+
+                <!-- Achievements Block Starts -->
+                <div class="card bg-white p-2 pt-2 rounded-lg">
+                    <h2
+                        class="my-1 ml-2 flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-2">
+                        Achievements
+                    </h2>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <!-- Achievement Block 1 -->
+                        <div class="flex items-center pb-2 mb-2 border-b">
+                            <p class="text-sm text-gray-600 font-medium w-36">
+                                2x Hive Five Award
+                            </p>
+                            <div class="flex items-center text-xs font-medium text-gray-600 dark:text-night-400 ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                    <path fill="currentColor"
+                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z">
+                                    </path>
+                                </svg>
+                                <span class="ml-1"> Persistent Systems </span>
+                            </div>
+                        </div>
+                        <!-- Achievement Block 2 -->
+                        <div class="flex items-center">
+                            <p class="text-sm text-gray-600 font-medium w-36">
+                                2x Insta Award, <br />2x RISE Award
+                            </p>
+                            <div class="flex items-center text-xs font-medium text-gray-600 dark:text-night-400 ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                    <path fill="currentColor"
+                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z">
+                                    </path>
+                                </svg>
+                                <span class="ml-1"> Infosys Limited </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievements Block Ends -->
+
+                <!-- Publications Block Starts -->
+                <div class="card bg-white p-4 pt-2 rounded-lg">
+                    <h2
+                        class="my-1 flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-4">
+                        Publications
+                    </h2>
+                    <div class="p-2">
+                        <div class="flex items-center mb-2">
+                            <img src="Assets/images/OSNetworkLogger.png" class="w-8 h-8 mr-4" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold"
+                                    href="https://chromewebstore.google.com/detail/salesforce-omnistudio-net/gnldglohmhcppaebjjkcgbhdpffblbnn"
+                                    target="_blank">Salesforce OmniStudio Debugger</a>
+                                <p class="text-xs text-gray-500">Chrome Extension</p>
+                            </div>
+                        </div>
+                        <!-- Publication 1 -->
+                        <div class="flex items-center">
+                            <img src="Assets/images/sf_os_helper.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://chromewebstore.google.com/detail/salesforce-omnistudio-hel/gaogdijndgigjopjiidpemfglhokcmpe"
+                                    target="_blank">Salesforce OmniStudio Helper</a>
+                                <p class="text-xs text-gray-500 ml-4">Chrome Extension</p>
+                            </div>
+                        </div>
+                        <!-- Publication 2 -->
+                        <div class="flex items-center mt-4">
+                            <img src="Assets/images/sf_login_manager.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://chromewebstore.google.com/detail/salesforce-login-manager/beemdmmeeddbifmjlaiboldgnffddibd"
+                                    target="_blank">Salesforce Login Manager</a>
+                                <p class="text-xs text-gray-500 ml-4">Chrome Extension</p>
+                            </div>
+                        </div>
+                        <!-- Publication 3 -->
+                        <div class="flex items-center mt-4">
+                            <img src="Assets/images/comma_inserter.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://chromewebstore.google.com/detail/comma-inserter-for-soql/mkpajbolnpjffffffhokhfefmjmdfgeb"
+                                    target="_blank">Comma Inserter for SOQL</a>
+                                <p class="text-xs text-gray-500 ml-4">Chrome Extension</p>
+                            </div>
+                        </div>
+                        <!-- Publication 4 -->
+                        <div class="flex items-center mt-4">
+                            <img src="Assets/images/slds_icon.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://rohitasare7.github.io/SLDS-Made-Easy/" target="_blank">SLDS Made
+                                    Easy</a>
+                                <p class="text-xs text-gray-500 ml-4">Web App</p>
+                            </div>
+                        </div>
+                        <!-- Publication 5 -->
+                        <div class="flex items-center mt-4">
+                            <img src="Assets/images/random_data_gen.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://rohitasare7.github.io/random-data-generator/" target="_blank">Random
+                                    Data Generator</a>
+                                <p class="text-xs text-gray-500 ml-4">Web App</p>
+                            </div>
+                        </div>
+                        <!-- Publication 6 -->
+                        <div class="flex items-center mt-4">
+                            <img src="Assets/images/json_to_apex.png" class="w-8 h-8" />
+                            <div>
+                                <a class="text-blue-800 hover:text-blue-900 font-semibold ml-4"
+                                    href="https://rohitasare7.github.io/Tools/JSON-To-Apex/" target="_blank">JSON to
+                                    Apex</a>
+                                <p class="text-xs text-gray-500 ml-4">Web App</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Publications Block Ends -->
+
+                <!-- Certifications Block Starts -->
+                <div class="card bg-white p-4 pt-2 rounded-lg">
+                    <h2
+                        class="my-1 flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-4">
+                        <a href="https://www.salesforce.com/trailblazer/rohitasare" target="_blank"
+                            title="Click to verify">Certifications (13X)</a>
+                    </h2>
+                    <div class="p-2">
+                        <!-- Main SF Certifications -->
+                        <div class="flex flex-wrap">
+                            <img src="Assets/certifications/Sharing.and.Visibility.Architect.png"
+                                title="Sharing & Visibility Architect" class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Administrator.png" title="Administrator"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/App.Builder.png" title="App Builder"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Programmer.I.png" title="Platform Developer 1"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Programmer.II.png" title="Platform Developer 2"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Omnistudio.Developer.png" title="OmniStudio Developer"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Service.Consultant.png" title="Service Cloud Consultant"
+                                class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/Field.Service.Lightning.Consultant.png"
+                                title="Field Service Consultant" class="w-24 mr-2 mb-2" />
+                            <img src="Assets/certifications/SF.DataCloud.png" title="Salesforce Data Cloud Consultant"
+                                class="w-24 mr-2 mb-2" />
+                            <!-- Associate SF Certifications -->
+                            <div class="flex flex-wrap">
+
+                                <img src="Assets/certifications/Associate.png" title="Salesforce Associate"
+                                    class="w-24 mr-2 mb-2" />
+                                <img src="Assets/certifications/AI.Associate.png" title="Salesforce AI Associate"
+                                    class="w-24 mr-2 mb-2" />
+                            </div>
+                            <!-- Accredited Professional Certifications -->
+                            <div class="flex flex-wrap">
+                                <img src="Assets/certifications/Einstein Next Best Action.png"
+                                    title="Einstein Next Best Action Accredited Professional" class="w-24 mr-2 mb-2" />
+                                <img src="Assets/certifications/Financial Services Cloud.png"
+                                    title="Financial Services Cloud Accredited Professional" class="w-24 mr-2 mb-2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certifications Block Ends -->
+            </div>
+            <!-- Main Block Starts -->
+            <div class="mt-4 space-y-5 sm:mt-0 lg:col-span-2">
+                <!-- Experience Block Starts -->
+                <div class="card bg-white p-3 rounded-lg">
+                    <h2
+                        class="flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-3 ml-2">
+                        Experience
+                    </h2>
+                    <!-- Experience Block 1 -->
+                    <div class="mb-5 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/company_logos/Infosys.svg" class="mb-2 md:mb-0" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Senior Associate Consultant
+                                    </div>
+                                    <div
+                                        class="order-last inline-flex items-center border rounded-lg bg-white px-2 py-1 text-xs font-medium text-primary-500">
+                                        Full-time
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                        </svg>
+                                        <span class="ml-1"> Infosys Limited </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Pune, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> Aug 2022 - Present </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-sm text-gray-600 mt-2">
+                                <p>
+                                    As an experienced Salesforce professional, I consistently
+                                    leveraged the best practices to optimize processes, deliver
+                                    tailored solutions for clients, and drive innovation within
+                                    my team. My key achievements encompassed the following
+                                    areas:
+                                </p>
+
+                                <div class="my-2">
+                                    <p class="font-semibold mb-1 text-gray-700">
+                                        Process Automation
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Automated processes using custom Lightning Web
+                                            Components (LWC) and Apex frameworks for the Production
+                                            Support team, enhancing efficiency and productivity.
+                                        </li>
+                                        <li>
+                                            Created productivity tools to automate repetitive tasks,
+                                            reducing manual efforts.
+                                        </li>
+                                        <li>
+                                            Demonstrated commitment to continuous improvement by
+                                            submitting 8 Kaizens so far.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <p class="font-semibold mb-1 text-gray-700">
+                                        Solution Design and Analysis
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Gathered requirements, performed comprehensive analysis,
+                                            designed high-level solutions, and conducted thorough
+                                            impact assessments to ensure successful implementation.
+                                        </li>
+                                        <li>
+                                            Conducted case studies utilizing advanced AI
+                                            technologies like OpenAI, Infosys Topaz, and GitHub
+                                            Copilot to develop innovative client-specific solutions.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <p class="font-semibold mb-1 text-gray-700">
+                                        Technical Expertise
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Worked on Field Serivce (FSL), Vlocity CPQ, OmniStudio
+                                            Components (IP, DR).
+                                        </li>
+                                        <li>
+                                            Developed a robust Custom REST API Framework and built
+                                            complex APIs.
+                                        </li>
+                                        <li>
+                                            Optimized Apex Classes, Test Classes, and Integration
+                                            Procedures, resulting in improved performance and code
+                                            quality.
+                                        </li>
+                                        <li>
+                                            Automated SOQL Queries and Apex Code generation for Unit
+                                            Testing, streamlining the testing process and ensuring
+                                            code reliability.
+                                        </li>
+                                        <li>
+                                            Demonstrated expertise in debugging Integration
+                                            Procedures, Data Raptors &amp; Apex Classes.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <p class="font-semibold mb-1 text-gray-700">
+                                        Documentation and Knowledge Transfer
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Created comprehensive Standard Operating Procedures
+                                            (SOPs), documentation, and Knowledge Transfer materials.
+                                        </li>
+                                        <li>
+                                            Trained and mentored over 15+ resources on Salesforce
+                                            Administration and Development, fostering a culture of
+                                            continuous learning and skill development within the
+                                            team.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Block 2 -->
+                    <div class="mb-5 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/company_logos/persistent.svg" class="mb-2 md:mb-0" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Senior Software Engineer
+                                    </div>
+                                    <div
+                                        class="order-last inline-flex items-center border rounded-lg bg-white px-2 py-1 text-xs font-medium text-primary-500">
+                                        Full-time
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                        </svg>
+                                        <span class="ml-1"> Persistent Systems </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Pune, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> Apr 2021 - Aug 2022 </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-sm text-gray-600 mt-2">
+                                <div class="my-2">
+                                    <p class="font-semibold mb-1 mt-3 text-gray-700">
+                                        Salesforce Development
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Built complex solutions in Apex, Aura Components, SOQL,
+                                            and API Integrations.
+                                        </li>
+                                        <li>
+                                            Integrated Inbound REST APIs for Split Org using
+                                            External Objects.
+                                        </li>
+                                        <li>
+                                            Fixed production bugs, Optimized SOQL, and maintained
+                                            code quality with Best Practices.
+                                        </li>
+                                        <li>
+                                            Contributed to DevOps processes, including Dev Sandbox
+                                            setup, code deployment via BitBucket, Jenkins, and
+                                            VSCode.
+                                        </li>
+                                        <li>
+                                            Handled data migration, export/import, and mapping to
+                                            business objects in Data Loader.
+                                        </li>
+                                        <li>
+                                            Maintained custom objects, fields, layouts, custom
+                                            metadata/settings, and labels.
+                                        </li>
+                                        <li>
+                                            Managed Profiles, Permission Sets, Apex Class Security,
+                                            and OWD Settings.
+                                        </li>
+                                        <li>
+                                            Designed Test Data Generator Tool for unit testing.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <p class="font-semibold mb-1 text-gray-700">
+                                        Knowledge Transfer &amp; Code Quality
+                                    </p>
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Conducted functional &amp; technical KT sessions for 20+
+                                            new team members.
+                                        </li>
+                                        <li>
+                                            Maintained &amp; reviewed code for Apex Classes &amp;
+                                            Aura Components.
+                                        </li>
+                                        <li>
+                                            Ensured high-quality code delivery and adherence to best
+                                            practices.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Block 3 -->
+                    <div class="mb-5 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/company_logos/emerson.svg" class="mb-2 md:mb-0 ml-0 md:mx-3" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Vendor Development Engineer
+                                    </div>
+                                    <div
+                                        class="order-last inline-flex items-center border rounded-lg bg-white px-2 py-1 text-xs font-medium text-primary-500">
+                                        Full-time
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                        </svg>
+                                        <span class="ml-1"> Emerson Automation Solutions </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Pune, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> Jul 2018 - Jul 2019 </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-sm text-gray-600 mt-4">
+                                <div class="my-2">
+                                    <ul class="list-disc pl-5">
+                                        <li>
+                                            Created &amp; managed custom objects, fields, page
+                                            layouts to support business operations.
+                                        </li>
+                                        <li>
+                                            Created various reports &amp; dashboards to provide
+                                            valuable insights.
+                                        </li>
+                                        <li>
+                                            Implemented the Data Import Wizard for efficient data
+                                            import &amp; export operations.
+                                        </li>
+                                        <li>
+                                            Contributed 26 Kaizens to enhance speed, efficiency,
+                                            &amp; eliminate manual errors in daily operations which
+                                            increased productivity.
+                                        </li>
+                                        <li>
+                                            Achieved significant time savings through Excel
+                                            automation, reducing a 6-hour task to just 10 minutes
+                                            using Excel formulas &amp; macros.
+                                        </li>
+                                        <li>
+                                            Utilized Value Stream Mapping (VSM) for data analysis
+                                            &amp; business strategy development.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Block Ends -->
+
+                <!-- Education Block Starts-->
+                <div class="card bg-white p-3 rounded-lg">
+                    <h2
+                        class="flex text-lg font-semibold dark:text-night-50 items-center before:inline-block before:h-1.5 before:w-1.5 before:bg-blue-500 before:rounded-full before:mr-2 before:self-center mb-3 ml-2">
+                        Education
+                    </h2>
+                    <!-- Education Block 1 -->
+                    <div class="mb-3 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/images/vit-logo.png" class="mb-2 md:mb-0 w-10" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Vishwakarma Institute of Technology
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5"
+                                            class="v.5">
+                                            <path fill="currentColor"
+                                                d="M4 11.333L0 9l12-7l12 7v8.5h-2v-7.333l-2 1.166v6.678l-.223.275A9.983 9.983 0 0 1 12 22a9.983 9.983 0 0 1-7.777-3.714L4 18.011zM6 12.5v4.792A7.979 7.979 0 0 0 12 20a7.978 7.978 0 0 0 6-2.708V12.5L12 16zM3.97 9L12 13.685L20.03 9L12 4.315z" />
+                                        </svg>
+                                        <span class="ml-1">
+                                            B.Tech in Mechanical Engineering
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Pune, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> 2015 - 2018 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Block 2 -->
+                    <div class="mb-3 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/images/gpa-logo.png" class="mb-2 md:mb-0 w-10 mix-blend-multiply" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Government Polytechnic Amravati
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5"
+                                            class="v.5">
+                                            <path fill="currentColor"
+                                                d="M4 11.333L0 9l12-7l12 7v8.5h-2v-7.333l-2 1.166v6.678l-.223.275A9.983 9.983 0 0 1 12 22a9.983 9.983 0 0 1-7.777-3.714L4 18.011zM6 12.5v4.792A7.979 7.979 0 0 0 12 20a7.978 7.978 0 0 0 6-2.708V12.5L12 16zM3.97 9L12 13.685L20.03 9L12 4.315z" />
+                                        </svg>
+                                        <span class="ml-1">
+                                            Diploma in Mechanical Engineering
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Amravati, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> 2012 - 2015 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Block 3 -->
+                    <div class="mb-3 md:flex md:items-start p-4 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                        <img src="Assets/images/nlhs-logo.png" class="mb-2 md:mb-0 w-10 mix-blend-multiply" />
+                        <div class="ml-0 md:ml-3 w-full">
+                            <div class="company_description">
+                                <div class="flex items-end justify-between items-center">
+                                    <div class="font-semibold text-gray-700 dark:text-night-50">
+                                        Narayandas Laddha Highschool
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center mt-2 gap-2 md:gap-4">
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5"
+                                            class="v.5">
+                                            <path fill="currentColor"
+                                                d="M4 11.333L0 9l12-7l12 7v8.5h-2v-7.333l-2 1.166v6.678l-.223.275A9.983 9.983 0 0 1 12 22a9.983 9.983 0 0 1-7.777-3.714L4 18.011zM6 12.5v4.792A7.979 7.979 0 0 0 12 20a7.978 7.978 0 0 0 6-2.708V12.5L12 16zM3.97 9L12 13.685L20.03 9L12 4.315z" />
+                                        </svg>
+                                        <span class="ml-1"> SSC </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="m12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9zM12 13a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
+                                        </svg>
+                                        <span class="ml-1"> Amravati, India </span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-xs font-semibold text-gray-600 dark:text-night-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-3.5 h-3.5">
+                                            <path fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                        </svg>
+                                        <span class="ml-1"> 2012 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Block Starts-->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
