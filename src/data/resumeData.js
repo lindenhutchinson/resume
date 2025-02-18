@@ -4,8 +4,8 @@ export const resumeData = {
     title: "Software Engineer",
     description:
       "Innovative Software Engineer with extensive experience in full-stack development, security enhancements, and project leadership. Adept at breaking down complex requirements into actionable tasks, optimizing workflows, and delivering scalable solutions that drive efficiency and improve security.",
-    image: "/assets/images/me.jpg",
-    coverImage: "/assets/images/cover_pic.jpg",
+    image: "/resume/assets/images/me.jpg",
+    coverImage: "/resume/assets/images/cover_pic.jpg",
     contact: {
       email: "hutchinson.linden@gmail.com",
       github: "https://github.com/lindenhutchinson",
@@ -16,7 +16,7 @@ export const resumeData = {
   experience: [
     {
       company: "Tesserent - Cyber Solutions by Thales",
-      logo: "/assets/logos/tesserent-logo.jpg",
+      logo: "/resume/assets/logos/tesserent-logo.jpg",
       position: "Senior Software Developer",
       location: "Melbourne",
       duration: "March 2023 - Present",
@@ -32,7 +32,7 @@ export const resumeData = {
     },
     {
       company: "Hutchinson Software",
-      logo: "/assets/logos/hutchinson-software-logo.jpg",
+      logo: "/resume/assets/logos/hutchinson-software-logo.jpg",
       position: "Software Developer",
       location: "Melbourne",
       duration: "January 2019 - March 2023",
@@ -47,7 +47,7 @@ export const resumeData = {
     },
     {
       company: "Deakin University",
-      logo: "/assets/logos/deakin-uni-logo.jpg",
+      logo: "/resume/assets/logos/deakin-uni-logo.jpg",
       position: "Casual Research Assistant",
       location: "Melbourne",
       duration: "August 2022 - December 2022",
@@ -62,7 +62,7 @@ export const resumeData = {
   education: [
     {
       institution: "Deakin University",
-      logo: "/assets/logos/deakin-uni-logo.jpg",
+      logo: "/resume/assets/logos/deakin-uni-logo.jpg",
       degree: "Bachelor of Artificial Intelligence",
       location: "Melbourne",
       duration: "2019 - 2022",
