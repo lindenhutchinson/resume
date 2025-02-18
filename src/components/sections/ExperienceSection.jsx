@@ -11,7 +11,7 @@ export const ExperienceSection = ({ data }) => {
         {data.map((experience, index) => (
           <div 
             key={index}
-            className="mb-3 md:flex md:items-start p-4 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg transition-colors animate-slide-in"
+            className="mb-3 md:flex md:items-start p-4 bg-gray-50 dark:bg-gray-700 rounded-lg transition-colors animate-slide-in"
           >
             <div className="md:flex md:items-start">
               {experience.logo && (

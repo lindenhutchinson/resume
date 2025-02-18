@@ -1,9 +1,10 @@
 export const resumeData = {
   personalInfo: {
     name: "Linden Hutchinson",
-    title: "Software Developer",
-    description: "Innovative Software Developer with proven expertise in full-stack development and a strong focus on code quality and testing. Demonstrated success in leading technical initiatives, optimizing development workflows, and implementing robust security features. Known for solving complex technical challenges and driving improvements in development practices.",
-    image: "/assets/images/me.png",
+    title: "Software Engineer",
+    description:
+      "Innovative Software Engineer with extensive experience in full-stack development, security enhancements, and project leadership. Adept at breaking down complex requirements into actionable tasks, optimizing workflows, and delivering scalable solutions that drive efficiency and improve security.",
+    image: "/assets/images/me.jpg",
     coverImage: "/assets/images/cover_pic.jpg",
     contact: {
       email: "hutchinson.linden@gmail.com",
@@ -20,13 +21,13 @@ export const resumeData = {
       location: "Melbourne",
       duration: "March 2023 - Present",
       type: "Full-time",
-      description: "Technical lead for React UI development and security infrastructure in a cyber security solutions environment",
+      description:
+        "Led critical technical initiatives across multiple projects, consistently driving improvements in project efficiency, security, and cross-team collaboration.",
       achievements: [
-        "Spearheaded the development of a comprehensive React UI component library, reducing development time by 40% and ensuring consistent user experience across multiple applications",
-        "Architected and implemented a sophisticated permissions system overhaul, enhancing security protocols while improving developer workflow efficiency by 30%",
-        "Established and enforced code quality standards using djLint and other tools, resulting in a 50% reduction in code review iterations and improved maintainability",
-        "Developed reusable input components with built-in validation and security features, reducing security vulnerabilities by 80% and cutting development time for new forms by half",
-        "Successfully resolved critical performance bottlenecks and complex bugs, improving application response time by 60% and reducing customer-reported issues by 40%"
+        "Optimized workflows by decomposing and estimating hundreds of complex user stories into actionable tickets over 6 weeks—ensuring immediate task commencement and effective stakeholder communication. Developed expertise in authentication solutions such as Azure B2C and Azure Entra.",
+        "Diagnosed and resolved systemic issues in existing systems, including redesigning a flawed multi-tenant permissions framework. Implemented and documented a robust permissions system that significantly enhanced security and streamlined developer productivity.",
+        "Streamlined requirements analysis and documentation for tender projects, ensuring clear deliverables and smooth execution across teams.",
+        "Pioneered the development of evaluation software and led generative AI research, culminating in a comprehensive report that provided strategic insights on AI applications in the workplace."
       ]
     },
     {
@@ -36,13 +37,12 @@ export const resumeData = {
       location: "Melbourne",
       duration: "January 2019 - March 2023",
       type: "Full-time",
-      description: "Full-stack developer specializing in custom business solutions and application modernization",
+      description:
+        "Full-stack developer dedicated to modernizing legacy applications and delivering innovative business solutions that streamline processes and enhance user experiences.",
       achievements: [
-        "Engineered a high-performance Vue.js data visualization system integrated with PHP backend, processing over 100,000 records efficiently while maintaining sub-second response times",
-        "Implemented comprehensive testing strategy using PHPUnit and Playwright, achieving 90% code coverage and reducing post-deployment issues by 75%",
-        "Developed a Laravel-based business automation platform that reduced client's manual processing time by 70% and eliminated data entry errors",
-        "Built and optimized a JasperReport certificate generation pipeline capable of processing 1000+ custom certificates per hour",
-        "Modernized legacy PHP applications using Test-Driven Development, resulting in 65% fewer production bugs and 40% faster feature implementation"
+        "Engineered a customizable Vue.js data visualization system integrated with a PHP API, complete with comprehensive testing using PHPUnit and Playwright to ensure reliability and maintainability.",
+        "Developed a bespoke Laravel application that automated critical business processes, featuring an efficient JasperReport pipeline for rapid certificate generation.",
+        "Utilized test-driven development to revitalize legacy PHP applications, reducing production issues and accelerating feature deployment, ultimately boosting system reliability and user satisfaction."
       ]
     },
     {
@@ -52,11 +52,10 @@ export const resumeData = {
       location: "Melbourne",
       duration: "August 2022 - December 2022",
       type: "Casual",
-      description: "Enhanced Learning Management System through UI/UX improvements and feature development",
+      description:
+        "Supported the enhancement of the Learning Management System by developing dynamic UI components using Angular and Ruby on Rails.",
       achievements: [
-        "Redesigned and implemented key LMS features that improved student engagement metrics by 35%",
-        "Developed interactive UI components that reduced average task completion time by 45%",
-        "Implemented accessibility improvements achieving WCAG 2.1 AA compliance across all new features"
+        "Expanded LMS functionality with interactive UI components, significantly improving student engagement and streamlining the digital learning experience."
       ]
     }
   ],
@@ -68,29 +67,19 @@ export const resumeData = {
       location: "Melbourne",
       duration: "2019 - 2022",
       grade: "Distinction"
-    },
+    }
   ],
   skills: {
-    languages: {
-      title: "Programming Languages",
-      items: [
-        "Python",
-        "PHP",
-        "TypeScript/JavaScript",
-        "SQL",
-        "Bash",
-        "C#",
-        "Ruby"
-      ]
-    },
     frameworks: {
       title: "Frameworks & Libraries",
       items: [
-        "Django/DRF",
+        "Django",
         "React",
+        "Angular",
         "Vue",
         "Laravel",
         "HTMX",
+        "Flask",
         "FastAPI",
         "Ruby on Rails"
       ]
@@ -98,97 +87,22 @@ export const resumeData = {
     tools: {
       title: "Tools & Infrastructure",
       items: [
-        "Git/GitHub",
-        "Docker",
         "AWS",
+        "Azure",
+        "Git",
+        "Docker",
+        "Ubuntu",
+        "Linux",
         "PostgreSQL",
         "MongoDB",
-        "Linux/Ubuntu",
+        "JIRA",
         "CI/CD",
-        "Nginx"
+        "Azure B2C",
+        "Azure Entra"
       ]
     },
-    practices: {
-      title: "Practices & Methodologies",
-      items: [
-        "Test-Driven Development",
-        "API Design",
-        "System Design",
-        "Code Review",
-        "Documentation",
-        "Agile/Scrum"
-      ]
-    }
   },
-  // certifications: [
-  //   {
-  //     name: "AWS Certified Solutions Architect",
-  //     image: "/assets/certifications/aws-sa.png",
-  //     link: "https://aws.amazon.com/verification"
-  //   },
-  // ],
-  publications: [
-    {
-      title: "Scaling Microservices: Lessons from the Field",
-      type: "Technical Blog",
-      image: "/assets/publications/microservices.png",
-      link: "https://medium.com/@linden/scaling-microservices"
-    },
-    {
-      title: "React Performance Optimization Techniques",
-      type: "Conference Talk",
-      image: "/assets/publications/react-perf.png",
-      link: "https://youtube.com/watch?v=react-performance"
-    },
-    {
-      title: "Building Resilient Cloud Applications",
-      type: "Research Paper",
-      image: "/assets/publications/cloud-resilience.png",
-      link: "https://arxiv.org/papers/cloud-resilience"
-    }
-  ],
-  projects: [
-    {
-      title: "Fire Station Deployment Optimizer",
-      description: "Developed an advanced optimization algorithm for fire station placement that improved theoretical emergency response times by 25%. Implemented using Python and modern optimization techniques, processing complex geographical and demographic data to generate optimal facility locations.",
-      link: "https://github.com/lindenhutchinson/fire-station-optimizer",
-      icon: "/assets/images/optimizer.png",
-      date: "2022",
-      technologies: [
-        "Python",
-        "NumPy",
-        "Optimization",
-        "Data Analysis",
-        "GIS"
-      ]
-    },
-    {
-      title: "Custom Certificate Generator",
-      description: "Built a high-performance certificate generation system capable of processing thousands of custom certificates per hour. Features include template management, batch processing, and automated PDF generation.",
-      link: "https://github.com/lindenhutchinson/certificate-generator",
-      icon: "/assets/images/cert-gen.png",
-      date: "2021",
-      technologies: [
-        "PHP",
-        "Laravel",
-        "JasperReports",
-        "PostgreSQL",
-        "Docker"
-      ]
-    },
-    {
-      title: "Data Visualization Dashboard",
-      description: "Created a responsive data visualization dashboard for displaying and analyzing large datasets. Implemented real-time filtering and interactive charts for improved user experience.",
-      link: "https://github.com/lindenhutchinson/data-viz",
-      icon: "/assets/images/data-viz.png",
-      date: "2020",
-      technologies: [
-        "Vue.js",
-        "D3.js",
-        "PHP",
-        "REST API",
-        "WebSockets"
-      ]
-    }
-  ]
+  projects: [],
+  publications: []
 };
+
