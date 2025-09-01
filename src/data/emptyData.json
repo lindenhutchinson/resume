@@ -1,0 +1,61 @@
+{
+    "personalInfo": {
+        "name": "",
+        "title": "",
+        "description": "",
+        "image": "",
+        "coverImage": "",
+        "contact": {
+        "email": "",
+        "github": "",
+        "linkedin": "",
+        "location": ""
+        }
+    },
+    "experience": [
+        {
+            "company": "",
+            "logo": "",
+            "position": "",
+            "location": "",
+            "duration": "",
+            "type": "",
+            "description": "",
+            "achievements": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "",
+            "logo": "",
+            "degree": "",
+            "location": "",
+            "duration": "",
+            "grade": ""
+        }
+    ],
+    "skills": {
+        "languages": { "title": "Programming Languages", "items": [] },
+        "frameworks": { "title": "Frameworks & Libraries", "items": [] },
+        "tools": { "title": "Tools & Infrastructure", "items": [] },
+        "practices": { "title": "Practices & Methodologies", "items": [] }
+    },
+    "projects": [
+        {
+            "title": "",
+            "description": "",
+            "link": "",
+            "icon": "",
+            "date": "",
+            "technologies": []
+        }
+    ],
+    "publications": [
+        {
+            "title": "",
+            "type": "",
+            "image": "",
+            "link": ""
+        }
+    ]
+}

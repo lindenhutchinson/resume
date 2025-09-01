@@ -3,9 +3,9 @@ import { ExperienceSection } from '../sections/ExperienceSection'
 import { EducationSection } from '../sections/EducationSection'
 import { SkillsSection } from '../sections/SkillsSection'
 import { ThemeToggle } from '../ui/ThemeToggle'
-import { resumeData } from '../../data/resumeData'
 import { ProjectsSection } from '../sections/ProjectsSection'
 import { PublicationsSection } from '../sections/PublicationsSection'
+import resumeData from "../../data/resumeData.json"
 
 export const MainLayout = () => {
   const { personalInfo, experience, education, skills, projects, publications } = resumeData

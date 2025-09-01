@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ personalInfo.name }} - Resume</title>
+    <style>
+        @page {
+            margin: 0.7in;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            font-size: 10pt;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            margin: 0 0 2px 0;
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1a2a3a;
+        }
+        .header .title {
+            margin: 0;
+            font-size: 14pt;
+            color: #444;
+            font-weight: 400;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 10pt;
+            color: #555;
+        }
+        .contact-info span {
+            margin: 0 7px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 15pt;
+            font-weight: 600;
+            color: #1a2a3a;
+            border-bottom: 2px solid #1a2a3a;
+            padding-bottom: 5px;
+            margin: 0 0 12px 0;
+            page-break-after: avoid;
+        }
+        .entry {
+            margin-bottom: 16px;
+            page-break-inside: avoid;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .entry h3 {
+            font-size: 12pt;
+            font-weight: 600;
+            margin: 0;
+            color: #222;
+        }
+        .entry .meta {
+            font-size: 10pt;
+            font-style: italic;
+            color: #666;
+            white-space: nowrap;
+        }
+        .entry .company {
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 7px;
+        }
+        .achievements {
+            margin: 0;
+            padding-left: 18px;
+            text-align: justify;
+        }
+        .achievements li {
+            margin-bottom: 5px;
+        }
+        .skills-container {
+            padding: 0;
+        }
+        .skill-category {
+            margin-bottom: 8px;
+        }
+        .skill-category strong {
+            display: inline-block;
+            width: 150px;
+            font-weight: 600;
+            color: #1a2a3a;
+        }
+        .education-entry {
+            margin-bottom: 8px;
+        }
+        .education-entry p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>{{ personalInfo.name }}</h1>
+        <p class="title">{{ personalInfo.title }}</p>
+        <div class="contact-info">
+            <span>{{ personalInfo.contact.location }}</span> |
+            <span><a href="mailto:{{ personalInfo.contact.email }}">{{ personalInfo.contact.email }}</a></span> |
+            <span><a href="{{ personalInfo.contact.linkedin }}" target="_blank">LinkedIn</a></span> |
+            <span><a href="{{ personalInfo.contact.github }}" target="_blank">GitHub</a></span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+        {% for job in experience %}
+        <div class="entry">
+            <div class="entry-header">
+                <h3>{{ job.position }}</h3>
+                <span class="meta">{{ job.duration }}</span>
+            </div>
+            <div class="company">{{ job.company }} | {{ job.location }}</div>
+            <ul class="achievements">
+                {% for achievement in job.achievements %}
+                <li>{{ achievement }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            {% for skill_category in skills_list %}
+            <div class="skill-category">
+                <strong>{{ skill_category.title }}:</strong>
+                <span>{{ skill_category._items }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% if education %}
+    <div class="section">
+        <h2>Education</h2>
+        {% for edu in education %}
+        <div class="entry education-entry">
+            <div class="entry-header">
+                <h3>{{ edu.degree }}</h3>
+                <span class="meta">{{ edu.duration }}</span>
+            </div>
+            <p>{{ edu.institution }}{% if edu.grade %} | Grade: {{ edu.grade }}{% endif %}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if projects %}
+    <div class="section">
+        <h2>Projects</h2>
+        {% for project in projects %}
+        <div class="entry">
+             <div class="entry-header">
+                <h3>{{ project.title }}</h3>
+                <span class="meta">{{ project.date }}</span>
+            </div>
+            <p>{{ project.description }}</p>
+            <p><strong>Technologies:</strong> {{ project.technologies | join(', ') }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if publications %}
+    <div class="section">
+        <h2>Publications</h2>
+        {% for pub in publications %}
+        <div class="entry">
+            <p><strong>{{ pub.title }}</strong> ({{ pub.date }})</p>
+            <p>{{ pub.journal }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</body>
+</html>

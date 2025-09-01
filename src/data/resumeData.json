@@ -1,0 +1,147 @@
+{
+  "personalInfo": {
+    "name": "Linden Hutchinson",
+    "title": "Software Engineer",
+    "description": "Innovative Software Engineer with extensive experience in full-stack development, security enhancements, and project leadership. Adept at breaking down complex requirements into actionable tasks, optimising workflows, and delivering scalable solutions that drive efficiency and improve security.",
+    "image": "/resume/assets/images/me.jpg",
+    "coverImage": "/resume/assets/images/cover_pic.jpg",
+    "contact": {
+      "email": "hutchinson.linden@gmail.com",
+      "github": "https://github.com/lindenhutchinson",
+      "linkedin": "https://www.linkedin.com/in/linden-hutchinson/",
+      "location": "Melbourne"
+    }
+  },
+  "experience": [
+    {
+      "company": "Sidekicker",
+      "logo": "/resume/assets/logos/sidekicker-logo.png",
+      "position": "Software Engineer",
+      "location": "Melbourne",
+      "duration": "May 2025 - Present",
+      "type": "Full-time",
+      "description": "Contributed to the enhancement of a legacy Laravel/Kohana platform by uplifting and optimising code, improving security, and developing new features for the React web and mobile applications.",
+      "achievements": [
+        "Dramatically improved database performance by optimising a key SQL query, resulting in a 96% reduction in execution time.",
+        "Conducted a thorough security audit of the existing codebase, identifying vulnerabilities and implementing immediate remediations to enhance system security.",
+        "Architected and implemented improved security patterns and best practices to safeguard the application and user data.",
+        "Developed and maintained features for the GraphQL API and React-based web and mobile applications, focusing on improving user experience and functionality."
+      ]
+    },
+    {
+      "company": "Tesserent - Cyber Solutions by Thales",
+      "logo": "/resume/assets/logos/tesserent-logo.jpg",
+      "position": "Senior Software Developer",
+      "location": "Melbourne",
+      "duration": "March 2023 - May 2025",
+      "type": "Full-time",
+      "description": "As a full-stack developer, worked on the software team responsible for developing a range of security-focused products for Australian Government clients, as well as an internal SaaS product. Promoted to Senior Software Developer while at Tesserent.",
+      "achievements": [
+        "Translated customer requirements into software design specifications, including detailed scopes of work and project estimates.",
+        "Developed continuous integration pipelines including automatic systems builds and unit test runs, with outputs reported to standard channels.",
+        "Architected and implemented an internal greenfield React application involving a complex integration with multiple APIs.",
+        "Performed code reviews for features developed by other members of the development team.",
+        "Developed unit and end-to-end tests for all features written."
+      ]
+    },
+    {
+      "company": "Hutchinson Software",
+      "logo": "/resume/assets/logos/hutchinson-software-logo.jpg",
+      "position": "Software Developer",
+      "location": "Melbourne",
+      "duration": "January 2019 - March 2023",
+      "type": "Full-time",
+      "description": "Worked on a legacy PHP system, investigating and resolving key issues. Collaborated with stakeholders to improve client satisfaction and worked on a variety of projects, including a bespoke Laravel application for event management.",
+      "achievements": [
+        "Modernised a legacy PHP system by investigating and resolving key issues, leading to improved stability and client satisfaction.",
+        "Developed a bespoke Laravel application for event management, streamlining processes and improving efficiency.",
+        "Engineered a Vue.js data dashboard with a PHP REST API, implementing a full test suite using PHPUnit and Playwright to ensure reliability.",
+        "Implemented and optimised complex SQL queries involving millions of rows to improve application performance."
+      ]
+    },
+    {
+      "company": "Deakin University",
+      "logo": "/resume/assets/logos/deakin-uni-logo.jpg",
+      "position": "Casual Research Assistant",
+      "location": "Melbourne",
+      "duration": "August 2022 - December 2022",
+      "type": "Casual",
+      "description": "Supported the enhancement of the Learning Management System by developing dynamic UI components using Angular and Ruby on Rails.",
+      "achievements": [
+        "Expanded LMS functionality with interactive UI components, significantly improving student engagement and streamlining the digital learning experience."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Deakin University",
+      "logo": "/resume/assets/logos/deakin-uni-logo.jpg",
+      "degree": "Bachelor of Artificial Intelligence",
+      "location": "Melbourne",
+      "duration": "2019 - 2022",
+      "grade": "Distinction"
+    }
+  ],
+  "skills": {
+    "languages": {
+      "title": "Languages",
+      "items": [
+        "PHP",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "HTML/CSS"
+      ]
+    },
+    "frameworks": {
+      "title": "Frameworks & Libraries",
+      "items": [
+        "Laravel",
+        "Django",
+        "React",
+        "Vue",
+        "HTMX",
+        "FastAPI",
+        "Angular",
+        "Ruby on Rails"
+      ]
+    },
+    "tools": {
+      "title": "Tools & Infrastructure",
+      "items": [
+        "JIRA",
+        "PHPUnit",
+        "Playwright",
+        "REST API",
+        "GraphQL",
+        "Git",
+        "Docker",
+        "CI/CD",
+        "AWS"
+      ]
+    }
+  },
+  "projects": [
+      {
+          "title": "Real-Time Multiplayer Game",
+          "description": "Architected and implemented a real-time multiplayer social deduction game featuring a decoupled frontend and a robust backend. The backend is built with Django and Django Ninja for a typed REST API, with real-time communication handled by Django Channels and Redis. The frontend uses Alpine.js for lightweight, reactive state management, and the entire application is containerised with Docker for seamless development and deployment.",
+          "link": "https://outlier-game.com",
+          "date": "2025",
+          "technologies": [
+              "Python",
+              "Django",
+              "Django Ninja",
+              "Channels",
+              "Redis",
+              "TypeScript",
+              "Alpine.js",
+              "Tailwind CSS",
+              "Vite",
+              "Docker"
+          ]
+      }
+  ],
+  "publications": []
+}
+
