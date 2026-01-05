@@ -108,9 +108,9 @@ def main():
         for i, job in enumerate(experience_data):
             if 'achievements' in job:
                 if i == 0:  # Most recent job
-                    job['achievements'] = job['achievements'][:3]
+                    job['achievements'] = job['achievements'][:5]
                 else:
-                    job['achievements'] = job['achievements'][:2]
+                    job['achievements'] = job['achievements'][:4]
 
         context = {
             'personalInfo': resume_data.get('personalInfo', {}),

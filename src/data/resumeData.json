@@ -1,8 +1,8 @@
 {
   "personalInfo": {
     "name": "Linden Hutchinson",
-    "title": "Software Engineer",
-    "description": "Innovative Software Engineer with extensive experience in full-stack development, security enhancements, and project leadership. Adept at breaking down complex requirements into actionable tasks, optimising workflows, and delivering scalable solutions that drive efficiency and improve security.",
+    "title": "Software Engineer (Full Stack)",
+    "description": "Performance-driven Software Engineer specialising in backend architecture, security, and scalable systems. Expert in Python (Django, FastAPI) and PHP (Laravel), with a proven track record of optimising legacy codebases, automating CI/CD pipelines, and delivering high-impact solutions for government and SaaS platforms.",
     "image": "/resume/assets/images/me.jpg",
     "coverImage": "/resume/assets/images/cover_pic.jpg",
     "contact": {
@@ -20,12 +20,14 @@
       "location": "Melbourne",
       "duration": "May 2025 - Present",
       "type": "Full-time",
-      "description": "Contributed to the enhancement of a legacy Laravel/Kohana platform by uplifting and optimising code, improving security, and developing new features for the React web and mobile applications.",
+      "description": "Leading the optimisation of a core Laravel/Kohana platform, focusing on backend performance, observability, and modernising developer workflows.",
       "achievements": [
+        "Developed features for a GraphQL API and React-based applications, ensuring seamless full-stack integration.",
         "Dramatically improved database performance by optimising a key SQL query, resulting in a 96% reduction in execution time.",
-        "Conducted a thorough security audit of the existing codebase, identifying vulnerabilities and implementing immediate remediations to enhance system security.",
-        "Architected and implemented improved security patterns and best practices to safeguard the application and user data.",
-        "Developed and maintained features for the GraphQL API and React-based web and mobile applications, focusing on improving user experience and functionality."
+        "Conducted a thorough security audit of the codebase, identifying and remediating vulnerabilities to safeguard user data.",
+        "Enhanced system observability by working with tools such as New Relic, Sentry and Grafana, enabling proactive identification of performance bottlenecks.",
+        "Spearheaded new testing strategies and improved the Developer Experience (DevEx) for the testing suite, increasing deployment confidence.",
+        "Partnered with stakeholders to translate business requirements into technical specifications, taking full ownership of feature development and bug remediation."
       ]
     },
     {
@@ -35,13 +37,13 @@
       "location": "Melbourne",
       "duration": "March 2023 - May 2025",
       "type": "Full-time",
-      "description": "As a full-stack developer, worked on the software team responsible for developing a range of security-focused products for Australian Government clients, as well as an internal SaaS product. Promoted to Senior Software Developer while at Tesserent.",
+      "description": "Senior member of the software team developing high-security Python-based products for Australian Government clients and internal SaaS solutions.",
       "achievements": [
-        "Translated customer requirements into software design specifications, including detailed scopes of work and project estimates.",
-        "Developed continuous integration pipelines including automatic systems builds and unit test runs, with outputs reported to standard channels.",
-        "Architected and implemented an internal greenfield React application involving a complex integration with multiple APIs.",
-        "Performed code reviews for features developed by other members of the development team.",
-        "Developed unit and end-to-end tests for all features written."
+        "Triaged and resolved critical bugs in a legacy Django application, including a 6-month-old hidden issue; saved the development team 30 minutes of manual workaround time per day.",
+        "Architected and built internal tools and APIs using a modern Python stack, including FastAPI, Django Ninja, and HTMX.",
+        "Developed robust CI/CD pipelines with automated system builds and unit testing (Pytest) to ensure secure and reliable deployments.",
+        "Led code reviews and technical mentorship, ensuring adherence to security best practices and high-quality coding standards.",
+        "Architected an internal greenfield React application with complex multi-API integrations and high-security requirements."
       ]
     },
     {
@@ -51,24 +53,12 @@
       "location": "Melbourne",
       "duration": "January 2019 - March 2023",
       "type": "Full-time",
-      "description": "Worked on a legacy PHP system, investigating and resolving key issues. Collaborated with stakeholders to improve client satisfaction and worked on a variety of projects, including a bespoke Laravel application for event management.",
+      "description": "Focused on modernising legacy PHP environments and developing custom full-stack solutions for enterprise clients.",
       "achievements": [
-        "Modernised a legacy PHP system by investigating and resolving key issues, leading to improved stability and client satisfaction.",
-        "Developed a bespoke Laravel application for event management, streamlining processes and improving efficiency.",
-        "Engineered a Vue.js data dashboard with a PHP REST API, implementing a full test suite using PHPUnit and Playwright to ensure reliability.",
-        "Implemented and optimised complex SQL queries involving millions of rows to improve application performance."
-      ]
-    },
-    {
-      "company": "Deakin University",
-      "logo": "/resume/assets/logos/deakin-uni-logo.jpg",
-      "position": "Casual Research Assistant",
-      "location": "Melbourne",
-      "duration": "August 2022 - December 2022",
-      "type": "Casual",
-      "description": "Supported the enhancement of the Learning Management System by developing dynamic UI components using Angular and Ruby on Rails.",
-      "achievements": [
-        "Expanded LMS functionality with interactive UI components, significantly improving student engagement and streamlining the digital learning experience."
+        "Modernised a legacy PHP system by resolving core stability issues, significantly increasing system uptime and client satisfaction.",
+        "Developed a bespoke Laravel application for event management, automating workflows and improving operational efficiency.",
+        "Engineered a Vue.js data dashboard powered by a PHP REST API, implementing a comprehensive test suite using PHPUnit and Playwright.",
+        "Optimised complex SQL queries across datasets involving millions of rows to maintain high application performance."
       ]
     }
   ],
@@ -86,62 +76,61 @@
     "languages": {
       "title": "Languages",
       "items": [
-        "PHP",
         "Python",
+        "PHP",
+        "SQL",
         "JavaScript",
         "TypeScript",
-        "SQL",
         "HTML/CSS"
       ]
     },
     "frameworks": {
       "title": "Frameworks & Libraries",
       "items": [
-        "Laravel",
         "Django",
+        "FastAPI",
+        "Laravel",
+        "Django Ninja",
+        "HTMX",
         "React",
         "Vue",
-        "HTMX",
-        "FastAPI",
-        "Angular",
+        "Node.js",
         "Ruby on Rails"
       ]
     },
     "tools": {
       "title": "Tools & Infrastructure",
       "items": [
-        "JIRA",
+        "Pytest",
         "PHPUnit",
-        "Playwright",
-        "REST API",
-        "GraphQL",
-        "Git",
+        "Redis",
         "Docker",
-        "CI/CD",
-        "AWS"
+        "CI/CD (GitHub Actions/GitLab)",
+        "New Relic",
+        "Grafana",
+        "AWS",
+        "GraphQL",
+        "REST APIs",
+        "Git"
       ]
     }
   },
   "projects": [
-      {
-          "title": "Real-Time Multiplayer Game",
-          "description": "Architected and implemented a real-time multiplayer social deduction game featuring a decoupled frontend and a robust backend. The backend is built with Django and Django Ninja for a typed REST API, with real-time communication handled by Django Channels and Redis. The frontend uses Alpine.js for lightweight, reactive state management, and the entire application is containerised with Docker for seamless development and deployment.",
-          "link": "https://outlier-game.com",
-          "date": "2025",
-          "technologies": [
-              "Python",
-              "Django",
-              "Django Ninja",
-              "Channels",
-              "Redis",
-              "TypeScript",
-              "Alpine.js",
-              "Tailwind CSS",
-              "Vite",
-              "Docker"
-          ]
-      }
+    {
+      "title": "Real-Time Multiplayer Game",
+      "description": "A real-time social deduction game utilising a modern Python backend. Built with Django Ninja for typed REST APIs and Django Channels/Redis for low-latency communication. Decoupled frontend using Alpine.js and containerised with Docker.",
+      "link": "https://outlier-game.com",
+      "date": "2025",
+      "technologies": [
+        "Python",
+        "Django",
+        "Django Ninja",
+        "Channels",
+        "Redis",
+        "TypeScript",
+        "Docker"
+      ]
+    }
   ],
   "publications": []
 }
-
