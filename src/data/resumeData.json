@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Linden Hutchinson",
     "title": "Software Engineer",
-    "description": "Software Engineer with 7+ years' experience building backend systems and AI products across startups, SaaS, and high-security government environments. Strong in Python (FastAPI, Django) and PHP (Laravel), with a recent focus on applied LLMs: real-time voice agents, MCP servers, and model evaluation. Known for measurable wins in performance, reliability, and developer experience, from a 96% query speed-up to an MCP server handling 10,000+ queries.",
+    "description": "Software engineer with 7+ years building backend systems and AI products in Python and PHP. Currently working on voice AI, MCP servers, and integrations at a VC-backed startup.",
     "image": "/resume/assets/images/me.jpg",
     "coverImage": "/resume/assets/images/cover_pic.jpg",
     "contact": {
