@@ -1,0 +1,12 @@
+[project]
+name = "resume-pdf"
+version = "0.1.0"
+description = "Generates the PDF resume from src/data/resumeData.json"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1",
+    "weasyprint>=66",
+]
+
+[tool.uv]
+package = false

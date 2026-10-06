@@ -130,7 +130,7 @@ def main():
         
         # Define output path
         output_filename = "Linden_Hutchinson_Resume.pdf"
-        output_path = os.path.join(script_dir, output_filename)
+        output_path = os.path.join(script_dir, "..", "public", output_filename)
         
         print(f"Generating PDF at: {output_path}")
         

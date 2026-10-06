@@ -1,12 +1,13 @@
 {
   "personalInfo": {
     "name": "Linden Hutchinson",
-    "title": "Software Engineer (Full Stack)",
-    "description": "Performance-driven Software Engineer specialising in backend architecture, security, and scalable systems. Expert in Python (Django, FastAPI) and PHP (Laravel), with a proven track record of optimising legacy codebases, automating CI/CD pipelines, and delivering high-impact solutions for government and SaaS platforms.",
+    "title": "Software Engineer",
+    "description": "Software Engineer with 7+ years' experience building backend systems and AI products across startups, SaaS, and high-security government environments. Strong in Python (FastAPI, Django) and PHP (Laravel), with a recent focus on applied LLMs: real-time voice agents, MCP servers, and model evaluation. Known for measurable wins in performance, reliability, and developer experience, from a 96% query speed-up to an MCP server handling 10,000+ queries.",
     "image": "/resume/assets/images/me.jpg",
     "coverImage": "/resume/assets/images/cover_pic.jpg",
     "contact": {
       "email": "hutchinson.linden@gmail.com",
+      "phone": "0459 113 757",
       "github": "https://github.com/lindenhutchinson",
       "linkedin": "https://www.linkedin.com/in/linden-hutchinson/",
       "location": "Melbourne"
@@ -14,20 +15,36 @@
   },
   "experience": [
     {
+      "company": "Quarterzip AI",
+      "logo": "/resume/assets/logos/quarterzip-logo.png",
+      "position": "Software Engineer",
+      "location": "Melbourne",
+      "duration": "April 2026 - Present",
+      "type": "Full-time",
+      "description": "Engineer at a VC-backed startup building a screen-aware voice AI assistant that guides users through product onboarding and activation. Stack: FastAPI, Firebase, and Svelte.",
+      "achievements": [
+        "Designed and solely built an MCP server and AI chatbot giving stakeholders and customers natural-language access to product data; has served 10,000+ queries that previously required manual work, saving stakeholders hours on reporting and data extraction.",
+        "Implemented a full OAuth 2.0 authorisation flow for the MCP server, with PKCE and JWKS-based token verification, enabling secure native integration with Claude.",
+        "Owned the architecture and delivery of Google Calendar and Microsoft 365 integrations powering a new activation channel, issuing 10,000+ invites that bring users into onboarding sessions with the voice assistant.",
+        "Reduced voice call latency, tuned assistant prompts, and built an idempotent, monotonic event ledger so each call event is recorded exactly once and in order.",
+        "Built an AI-assisted development workflow, orchestrating parallel Claude Code agents as architect and reviewer to deliver multiple workstreams concurrently."
+      ]
+    },
+    {
       "company": "Sidekicker",
       "logo": "/resume/assets/logos/sidekicker-logo.png",
       "position": "Software Engineer",
       "location": "Melbourne",
-      "duration": "May 2025 - Present",
+      "duration": "May 2025 - April 2026",
       "type": "Full-time",
-      "description": "Leading the optimisation of a core Laravel/Kohana platform, focusing on backend performance, observability, and modernising developer workflows.",
+      "description": "Full-stack engineer on a core Laravel/Kohana marketplace platform and GraphQL API, focused on backend performance, observability, and developer experience.",
       "achievements": [
-        "Developed features for a GraphQL API and React-based applications, ensuring seamless full-stack integration.",
-        "Dramatically improved database performance by optimising a key SQL query, resulting in a 96% reduction in execution time.",
-        "Conducted a thorough security audit of the codebase, identifying and remediating vulnerabilities to safeguard user data.",
-        "Enhanced system observability by working with tools such as New Relic, Sentry and Grafana, enabling proactive identification of performance bottlenecks.",
-        "Spearheaded new testing strategies and improved the Developer Experience (DevEx) for the testing suite, increasing deployment confidence.",
-        "Partnered with stakeholders to translate business requirements into technical specifications, taking full ownership of feature development and bug remediation."
+        "Cut execution time of a key SQL query by 96% through query and index optimisation.",
+        "Delivered features across the GraphQL API and React applications, owning work end-to-end from requirements through release.",
+        "Conducted a security audit of the codebase, identifying and remediating SQL injection and XSS vulnerabilities to safeguard user data.",
+        "Improved observability with New Relic, Sentry, and Grafana, enabling proactive detection of performance bottlenecks.",
+        "Introduced new testing strategies and improved the developer experience of the test suite, increasing deployment confidence.",
+        "Partnered with stakeholders to translate business requirements into technical specifications."
       ]
     },
     {
@@ -37,13 +54,14 @@
       "location": "Melbourne",
       "duration": "March 2023 - May 2025",
       "type": "Full-time",
-      "description": "Senior member of the software team developing high-security Python-based products for Australian Government clients and internal SaaS solutions.",
+      "description": "Senior member of the software team developing high-security Python products for Australian Government clients and internal SaaS solutions.",
       "achievements": [
-        "Triaged and resolved critical bugs in a legacy Django application, including a 6-month-old hidden issue; saved the development team 30 minutes of manual workaround time per day.",
-        "Architected and built internal tools and APIs using a modern Python stack, including FastAPI, Django Ninja, and HTMX.",
-        "Developed robust CI/CD pipelines with automated system builds and unit testing (Pytest) to ensure secure and reliable deployments.",
-        "Led code reviews and technical mentorship, ensuring adherence to security best practices and high-quality coding standards.",
-        "Architected an internal greenfield React application with complex multi-API integrations and high-security requirements."
+        "Co-authored a report on the commercial viability of open-source LLMs; led the evaluation workstream, designing standard and novel benchmarks to compare capability across model families and sizes.",
+        "Architected an internal greenfield React application with complex multi-API integrations and high-security requirements.",
+        "Led code reviews and mentored developers on security best practices and coding standards.",
+        "Resolved critical bugs in a legacy Django application, including a hidden issue that had persisted for 6 months, saving the team 30 minutes of manual workarounds per day.",
+        "Built internal tools and APIs on a modern Python stack (FastAPI, Django Ninja, HTMX).",
+        "Built CI/CD pipelines with automated builds and Pytest suites to ensure secure, reliable deployments."
       ]
     },
     {
@@ -53,12 +71,12 @@
       "location": "Melbourne",
       "duration": "January 2019 - March 2023",
       "type": "Full-time",
-      "description": "Focused on modernising legacy PHP environments and developing custom full-stack solutions for enterprise clients.",
+      "description": "Modernised legacy PHP environments and built custom full-stack solutions for enterprise clients.",
       "achievements": [
-        "Modernised a legacy PHP system by resolving core stability issues, significantly increasing system uptime and client satisfaction.",
-        "Developed a bespoke Laravel application for event management, automating workflows and improving operational efficiency.",
-        "Engineered a Vue.js data dashboard powered by a PHP REST API, implementing a comprehensive test suite using PHPUnit and Playwright.",
-        "Optimised complex SQL queries across datasets involving millions of rows to maintain high application performance."
+        "Stabilised a legacy PHP system by diagnosing and resolving long-standing core reliability issues.",
+        "Built a bespoke Laravel application for event management, automating manual workflows.",
+        "Engineered a Vue.js data dashboard backed by a PHP REST API, with test coverage in PHPUnit and Playwright.",
+        "Optimised complex SQL queries over multi-million-row datasets to maintain application performance."
       ]
     }
   ],
@@ -79,38 +97,51 @@
         "Python",
         "PHP",
         "SQL",
-        "JavaScript",
         "TypeScript",
-        "HTML/CSS"
+        "JavaScript"
       ]
     },
     "frameworks": {
-      "title": "Frameworks & Libraries",
+      "title": "Frameworks & APIs",
       "items": [
-        "Django",
         "FastAPI",
-        "Laravel",
+        "Django",
         "Django Ninja",
-        "HTMX",
+        "Laravel",
+        "Kohana",
+        "Svelte",
         "React",
         "Vue",
-        "Node.js",
-        "Ruby on Rails"
+        "HTMX",
+        "GraphQL",
+        "REST"
+      ]
+    },
+    "ai": {
+      "title": "AI & LLMs",
+      "items": [
+        "Real-time Voice Agents",
+        "MCP",
+        "Prompt Engineering",
+        "LLM Evaluation",
+        "Agentic Coding (Claude Code)"
       ]
     },
     "tools": {
       "title": "Tools & Infrastructure",
       "items": [
+        "Docker",
+        "AWS",
+        "Firebase",
+        "Redis",
+        "OAuth 2.0",
+        "CI/CD (GitHub Actions/GitLab)",
         "Pytest",
         "PHPUnit",
-        "Redis",
-        "Docker",
-        "CI/CD (GitHub Actions/GitLab)",
+        "Playwright",
         "New Relic",
+        "Sentry",
         "Grafana",
-        "AWS",
-        "GraphQL",
-        "REST APIs",
         "Git"
       ]
     }
@@ -118,7 +149,7 @@
   "projects": [
     {
       "title": "Real-Time Multiplayer Game",
-      "description": "A real-time social deduction game utilising a modern Python backend. Built with Django Ninja for typed REST APIs and Django Channels/Redis for low-latency communication. Decoupled frontend using Alpine.js and containerised with Docker.",
+      "description": "A real-time social deduction game on a modern Python backend. Built with Django Ninja for typed REST APIs and Django Channels/Redis for low-latency communication, with a decoupled Alpine.js frontend, containerised with Docker.",
       "link": "https://outlier-game.com",
       "date": "2025",
       "technologies": [
@@ -128,7 +159,21 @@
         "Channels",
         "Redis",
         "TypeScript",
+        "Alpine.js",
         "Docker"
+      ]
+    },
+    {
+      "title": "AFL Data Analysis",
+      "description": "A data engineering and analysis platform for the Australian Football League. Automated scrapers collect match scores (1897-present), player statistics, and historical betting odds, feeding Python cleaning pipelines and Jupyter notebooks for statistical modelling.",
+      "link": "https://github.com/lindenhutchinson/afl_data",
+      "date": "2024",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "SciPy",
+        "BeautifulSoup",
+        "Jupyter"
       ]
     }
   ],

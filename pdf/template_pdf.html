@@ -86,7 +86,6 @@
         .achievements {
             margin: 0;
             padding-left: 18px;
-            text-align: justify;
         }
         .achievements li {
             margin-bottom: 5px;
@@ -95,11 +94,11 @@
             padding: 0;
         }
         .skill-category {
+            display: flex;
             margin-bottom: 8px;
         }
         .skill-category strong {
-            display: inline-block;
-            width: 150px;
+            flex: 0 0 150px;
             font-weight: 600;
             color: #1a2a3a;
         }
@@ -119,6 +118,9 @@
         <div class="contact-info">
             <span>{{ personalInfo.contact.location }}</span> |
             <span><a href="mailto:{{ personalInfo.contact.email }}">{{ personalInfo.contact.email }}</a></span> |
+            {% if personalInfo.contact.phone %}
+            <span><a href="tel:{{ personalInfo.contact.phone | replace(' ', '') }}">{{ personalInfo.contact.phone }}</a></span> |
+            {% endif %}
             <span><a href="{{ personalInfo.contact.linkedin }}" target="_blank">LinkedIn</a></span> |
             <span><a href="{{ personalInfo.contact.github }}" target="_blank">GitHub</a></span>
         </div>

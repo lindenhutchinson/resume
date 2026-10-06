@@ -104,28 +104,16 @@ This will generate optimized static files in the `dist` directory.
 
 ## PDF Resume Generation
 
-This project includes a Python script to generate a PDF version of your resume from the same `resumeData.json` file.
+The `pdf` directory is a [uv](https://docs.astral.sh/uv/) project that renders `resumeData.json` to PDF with WeasyPrint.
 
-### 1. Setup a Python Virtual Environment
-From the `pdf` directory, create and activate a virtual environment:
+WeasyPrint needs the Pango system library. On Linux/WSL install `libpango-1.0-0` and `libpangoft2-1.0-0`; on Windows, run it from WSL.
+
 ```sh
 cd pdf
-python3 -m venv venv
-source venv/bin/activate
+uv run generate.py
 ```
 
-### 2. Install Python Dependencies
-Install the required Python packages:
-```sh
-pip install -r requirements.txt
-```
-
-### 3. Generate the PDF
-Run the generation script from the project's root directory:
-```sh
-python pdf/generate.py
-```
-The generated PDF will be saved as `Linden_Hutchinson_Resume.pdf` in the `pdf` directory.
+`uv run` creates the environment from `uv.lock` on first use. The PDF is written to `public/Linden_Hutchinson_Resume.pdf`, where the site serves it as a download.
 
 ## Customization
 - Modify `src/data/resumeData.json` to add your own information.
