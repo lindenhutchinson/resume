@@ -31,19 +31,21 @@ export const MainLayout = () => {
     <main className="w-full min-h-screen bg-gray-100 dark:bg-slate-900 text-gray-900 dark:text-gray-100">
       <ThemeToggle />
       <div className="container mx-auto max-w-7xl px-4 py-8">
-        <div className="gap-8 sm:grid lg:grid-cols-3">
+        {/* Below lg the columns use display: contents, so every section joins one
+            flex column and `order` puts experience straight after the profile. */}
+        <div className="flex flex-col gap-6 sm:gap-8 lg:grid lg:grid-cols-3">
           {/* Left Column - Profile and Additional Info */}
-          <div className="space-y-6 sm:space-y-8 mb-8 sm:mb-0">
-            {personalInfo && <ProfileSection data={personalInfo} />}
-            {hasEducation && <EducationSection data={education} />}
-            {hasSkills && <SkillsSection data={skills} />}
+          <div className="contents lg:block lg:space-y-8">
+            {personalInfo && <div className="order-1"><ProfileSection data={personalInfo} /></div>}
+            {hasEducation && <div className="order-5"><EducationSection data={education} /></div>}
+            {hasSkills && <div className="order-4"><SkillsSection data={skills} /></div>}
           </div>
-          
+
           {/* Right Column - Main Content */}
-          <div className="space-y-6 sm:space-y-8 lg:col-span-2">
-            {hasExperience && <ExperienceSection data={experience} />}
-            {hasProjects && <ProjectsSection data={projects} />}
-            {hasPublications && <PublicationsSection data={publications} />}
+          <div className="contents lg:block lg:col-span-2 lg:space-y-8">
+            {hasExperience && <div className="order-2"><ExperienceSection data={experience} /></div>}
+            {hasProjects && <div className="order-3"><ProjectsSection data={projects} /></div>}
+            {hasPublications && <div className="order-6"><PublicationsSection data={publications} /></div>}
           </div>
         </div>
       </div>
