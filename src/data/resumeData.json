@@ -1,8 +1,8 @@
 {
   "personalInfo": {
     "name": "Linden Hutchinson",
-    "title": "Software Engineer",
-    "description": "Software engineer with 7+ years building backend systems and AI products in Python and PHP. Currently working on voice AI, MCP servers, and integrations at a VC-backed startup.",
+    "title": "Software Engineer, Backend & AI",
+    "description": "Software engineer with 7+ years building production systems and AI products.",
     "image": "/resume/assets/images/me.jpg",
     "coverImage": "/resume/assets/images/cover_pic.jpg",
     "contact": {
@@ -19,15 +19,14 @@
       "logo": "/resume/assets/logos/quarterzip-logo.png",
       "position": "Software Engineer",
       "location": "Melbourne",
-      "duration": "April 2026 - Present",
+      "duration": "April 2026 - October 2026",
       "type": "Full-time",
       "description": "Engineer at a VC-backed startup building a screen-aware voice AI assistant that guides users through product onboarding and activation. Stack: FastAPI, Firebase, and Svelte.",
       "achievements": [
-        "Designed and solely built an MCP server and AI chatbot giving stakeholders and customers natural-language access to product data; has served 10,000+ queries that previously required manual work, saving stakeholders hours on reporting and data extraction.",
-        "Implemented a full OAuth 2.0 authorisation flow for the MCP server, with PKCE and JWKS-based token verification, enabling secure native integration with Claude.",
-        "Owned the architecture and delivery of Google Calendar and Microsoft 365 integrations powering a new activation channel, issuing 10,000+ invites that bring users into onboarding sessions with the voice assistant.",
-        "Reduced voice call latency, tuned assistant prompts, and built an idempotent, monotonic event ledger so each call event is recorded exactly once and in order.",
-        "Built an AI-assisted development workflow, orchestrating parallel Claude Code agents as architect and reviewer to deliver multiple workstreams concurrently."
+        "Designed and delivered an enterprise onboarding feature that books employees into sessions on their own calendars, built to onboard rosters of 10,000+ without manual scheduling.",
+        "Solely built an MCP server with OAuth 2.1, giving stakeholders secure access to product data from AI assistants.",
+        "Created a customer-facing AI analyst that answers questions about call data with cited evidence, replacing manual reporting across 10,000+ queries.",
+        "Developed a post-call analysis pipeline that shows customers where users get stuck and why, and turns those insights directly into improvements."
       ]
     },
     {
@@ -37,14 +36,12 @@
       "location": "Melbourne",
       "duration": "May 2025 - April 2026",
       "type": "Full-time",
-      "description": "Full-stack engineer on a core Laravel/Kohana marketplace platform and GraphQL API, focused on backend performance, observability, and developer experience.",
+      "description": "Full-stack engineer on a marketplace platform and GraphQL API, focused on feature work, backend performance, and observability.",
       "achievements": [
         "Cut execution time of a key SQL query by 96% through query and index optimisation.",
-        "Delivered features across the GraphQL API and React applications, owning work end-to-end from requirements through release.",
-        "Conducted a security audit of the codebase, identifying and remediating SQL injection and XSS vulnerabilities to safeguard user data.",
-        "Improved observability with New Relic, Sentry, and Grafana, enabling proactive detection of performance bottlenecks.",
-        "Introduced new testing strategies and improved the developer experience of the test suite, increasing deployment confidence.",
-        "Partnered with stakeholders to translate business requirements into technical specifications."
+        "Owned features end to end across the API and web apps, working with stakeholders from requirements through release.",
+        "Ran security audits that found and fixed SQL injection and XSS vulnerabilities, protecting user data.",
+        "Improved monitoring and test coverage, so performance problems were caught earlier and releases shipped with more confidence."
       ]
     },
     {
@@ -54,14 +51,12 @@
       "location": "Melbourne",
       "duration": "March 2023 - May 2025",
       "type": "Full-time",
-      "description": "Senior member of the software team developing high-security Python products for Australian Government clients and internal SaaS solutions.",
+      "description": "Senior engineer building high-security Python products for Australian Government clients and internal SaaS tools.",
       "achievements": [
-        "Co-authored a report on the commercial viability of open-source LLMs; led the evaluation workstream, designing standard and novel benchmarks to compare capability across model families and sizes.",
-        "Architected an internal greenfield React application with complex multi-API integrations and high-security requirements.",
-        "Led code reviews and mentored developers on security best practices and coding standards.",
-        "Resolved critical bugs in a legacy Django application, including a hidden issue that had persisted for 6 months, saving the team 30 minutes of manual workarounds per day.",
-        "Built internal tools and APIs on a modern Python stack (FastAPI, Django Ninja, HTMX).",
-        "Built CI/CD pipelines with automated builds and Pytest suites to ensure secure, reliable deployments."
+        "Co-authored a report on the commercial viability of open-source LLMs, leading the evaluation that benchmarked capability across model families and sizes.",
+        "Architected a greenfield internal application integrating multiple APIs, built to meet high-security requirements.",
+        "Resolved an issue in a legacy application that had persisted for 6 months, saving the team 30 minutes of manual work per day.",
+        "Led code reviews and mentored developers on security and coding standards."
       ]
     },
     {
@@ -71,12 +66,12 @@
       "location": "Melbourne",
       "duration": "January 2019 - March 2023",
       "type": "Full-time",
-      "description": "Modernised legacy PHP environments and built custom full-stack solutions for enterprise clients.",
+      "description": "Modernised legacy PHP systems and built custom full-stack applications for enterprise clients.",
       "achievements": [
-        "Stabilised a legacy PHP system by diagnosing and resolving long-standing core reliability issues.",
-        "Built a bespoke Laravel application for event management, automating manual workflows.",
-        "Engineered a Vue.js data dashboard backed by a PHP REST API, with test coverage in PHPUnit and Playwright.",
-        "Optimised complex SQL queries over multi-million-row datasets to maintain application performance."
+        "Stabilised a legacy system by tracing and fixing long-standing reliability issues.",
+        "Built a bespoke platform that took a meat-judging competition off paper, letting organisers upload contestants and judges enter scores online, with results calculated automatically.",
+        "Built customisable dashboards that let council staff see the state of sewerage and water treatment indicators at a glance.",
+        "Optimised SQL queries over multi-million-row datasets, keeping the application responsive as data grew."
       ]
     }
   ],
@@ -95,10 +90,11 @@
       "title": "Languages",
       "items": [
         "Python",
-        "PHP",
-        "SQL",
         "TypeScript",
-        "JavaScript"
+        "JavaScript",
+        "SQL",
+        "PHP",
+        "C#"
       ]
     },
     "frameworks": {
@@ -107,24 +103,27 @@
         "FastAPI",
         "Django",
         "Django Ninja",
+        "Flask",
         "Laravel",
-        "Kohana",
         "Svelte",
         "React",
         "Vue",
         "HTMX",
         "GraphQL",
-        "REST"
+        "REST",
+        "WebSockets",
+        "WebRTC"
       ]
     },
     "ai": {
       "title": "AI & LLMs",
       "items": [
         "Real-time Voice Agents",
+        "AI Agents & Tool Calling",
         "MCP",
         "Prompt Engineering",
         "LLM Evaluation",
-        "Agentic Coding (Claude Code)"
+        "Agentic Coding"
       ]
     },
     "tools": {
@@ -133,23 +132,25 @@
         "Docker",
         "AWS",
         "Firebase",
+        "PostgreSQL",
         "Redis",
-        "OAuth 2.0",
-        "CI/CD (GitHub Actions/GitLab)",
+        "Dramatiq",
+        "OAuth 2.1",
+        "GitHub Actions",
+        "GitLab CI",
         "Pytest",
-        "PHPUnit",
         "Playwright",
-        "New Relic",
         "Sentry",
         "Grafana",
-        "Git"
+        "New Relic",
+        "PostHog"
       ]
     }
   },
   "projects": [
     {
       "title": "Real-Time Multiplayer Game",
-      "description": "A real-time social deduction game on a modern Python backend. Built with Django Ninja for typed REST APIs and Django Channels/Redis for low-latency communication, with a decoupled Alpine.js frontend, containerised with Docker.",
+      "description": "A real-time multiplayer social deduction game with a typed Python API and low-latency WebSocket communication, deployed with Docker on a DigitalOcean droplet.",
       "link": "https://outlier-game.com",
       "date": "2025",
       "technologies": [
@@ -164,16 +165,15 @@
       ]
     },
     {
-      "title": "AFL Data Analysis",
-      "description": "A data engineering and analysis platform for the Australian Football League. Automated scrapers collect match scores (1897-present), player statistics, and historical betting odds, feeding Python cleaning pipelines and Jupyter notebooks for statistical modelling.",
-      "link": "https://github.com/lindenhutchinson/afl_data",
-      "date": "2024",
+      "title": "Self-Hosted AI Agent",
+      "description": "An AI agent that runs a home media server. It recommends titles through chat, monitors every service and summarises what's happening in plain language, and fixes stalled downloads on its own within a set of safe tool calls.",
+      "date": "2026",
       "technologies": [
         "Python",
-        "Pandas",
-        "SciPy",
-        "BeautifulSoup",
-        "Jupyter"
+        "Flask",
+        "Svelte",
+        "LLM Tool Calling",
+        "Docker"
       ]
     }
   ],

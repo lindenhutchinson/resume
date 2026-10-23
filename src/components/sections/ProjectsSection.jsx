@@ -24,14 +24,20 @@ export const ProjectsSection = ({ data }) => {
               <div className="flex-grow space-y-3">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <a 
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                    >
-                      {project.title}
-                    </a>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      >
+                        {project.title}
+                      </a>
+                    ) : (
+                      <span className="text-base font-medium text-gray-900 dark:text-white">
+                        {project.title}
+                      </span>
+                    )}
                     {project.date && (
                       <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                         {project.date}
@@ -68,7 +74,7 @@ ProjectsSection.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
+      link: PropTypes.string,
       icon: PropTypes.string,
       date: PropTypes.string,
       technologies: PropTypes.arrayOf(PropTypes.string)

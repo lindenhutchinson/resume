@@ -180,6 +180,9 @@
                 <h3>{{ project.title }}</h3>
                 <span class="meta">{{ project.date }}</span>
             </div>
+            {% if project.link %}
+            <div class="company"><a href="{{ project.link }}" target="_blank">{{ project.link | replace('https://', '') }}</a></div>
+            {% endif %}
             <p>{{ project.description }}</p>
             <p><strong>Technologies:</strong> {{ project.technologies | join(', ') }}</p>
         </div>
